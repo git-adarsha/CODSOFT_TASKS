@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ 
+    </style>
+    </head>
+    <body>
+    <div>
+        <h2 style="text-align: center;">Currency Converter Using API</h2>
+        <label>From</label>
+        <select id="fromCurrency"> 
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        </select>
+        <input type="number" id="amount" placeholder="Enter amount" />
+
+        <label>To</label>
+        <select id="toCurrency"> 
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        </select>
+        
+        <button onclick="convertCurrency()">Convert</button>
+
+        <p id="result" style="text-align: center;"></p>
+
+        <script src="script.js"></script>
+    </div>
+    </body>
+    </html>
